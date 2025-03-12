@@ -1,0 +1,249 @@
+:root {
+  --yellow: #FFD700;
+  --black: #000000;
+  --dark-gray: #333333;
+  --light-gray: #CCCCCC;
+  --white: #FFFFFF;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--white);
+  color: var(--dark-gray);
+}
+
+.header, .header-content {
+  background: transparent; /* Torna o header invisível */
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: none; /* Remove a sombra */
+  margin-top: 64px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.homeBack {
+  background-image: url('../imagens/homeImage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  position: fixed; /* Mantém a imagem fixa no fundo */
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+.h1Div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+  margin-bottom: 120px;
+  color: #FFFFFF;
+}
+
+.h1Div h1 {
+  font-size: 64px;
+}
+
+.h1Div button {
+  margin-top: 16px;
+}
+
+.button-transparent {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #7a7a7a;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-transparent:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* .sub-menu-wrap{
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+  max-height:  400px;
+}
+
+.sub-menu{
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.user-info{
+  display: flex;
+  align-items: center;
+}
+
+.user-info h3{
+  font-weight: 500;
+}
+
+.user-info img{
+  width: 60px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.sub-menu hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+
+.sub-menu-link p{
+  width: 100%;
+}
+
+.sub-menu-link img{
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+Teste Do icon q n funcionou
+*/
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    font-size: 24px;
+    color: var(--white);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    padding: 20px;
+    display: none;
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+
+  .mobile-menu a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--yellow);
+  }
+
+  .h1Div {
+    margin-top: 200px;
+    margin-bottom: 60px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .h1Div h1 {
+    font-size: 36px;
+  }
+
+  .button-transparent {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+/* Estilos para telas ainda menores */
+@media (max-width: 480px) {
+  .h1Div {
+    margin-top: 150px;
+  }
+
+  .h1Div h1 {
+    font-size: 28px;
+  }
+
+  .button-transparent {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,198 @@
+.gerirObra{
+    min-width: 98vw;
+    min-height: 98vh;
+    background-image: url('../imagens/BlueprintImage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Nunito", sans-serif;
+}
+
+.divPrincipal{
+    display: flex;
+}
+
+.cadastrarCard{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+    backdrop-filter: blur(8px); /* Efeito de desfoque no fundo */
+    border-radius: 40px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 500px; /* Largura máxima */
+    margin: 20px auto; /* Centralização */
+    margin-top: 60px;
+    padding: 40px; /* Espaçamento interno */
+}
+
+
+/* Estilo dos campos do formulário */
+#gestaoDeObraForm input, 
+#gestaoDeObraForm textarea {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px 0; /* Espaçamento vertical entre os campos */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Bordas sutis */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    outline: none; /* Remove o contorno ao focar */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+/* Estilo ao focar no campo */
+#gestaoDeObraForm input:focus, 
+#gestaoDeObraForm textarea:focus {
+    border-color: rgba(255, 255, 255, 0.8); /* Destaque na borda */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Sombra no foco */
+}
+
+/* Estilo do botão */
+#gestaoDeObraForm button {
+    width: 100%; /* Largura total */
+    padding: 12px 20px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    color: white; /* Cor do texto */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse no botão */
+#gestaoDeObraForm button:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo mais claro */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); /* Sombra mais evidente */
+}
+
+/* Efeito ao clicar no botão */
+#gestaoDeObraForm button:active {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo mais claro ao clicar */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Reduz a sombra */
+    transform: scale(0.98); /* Leve redução de tamanho */
+}
+
+.visualizarCard {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+    backdrop-filter: blur(8px); /* Efeito de desfoque no fundo */
+    border-radius: 40px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 500px; /* Largura máxima */
+    margin: 20px auto; /* Centralização */
+    margin-top: 60px;
+    padding: 40px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do campo de entrada */
+.visualizarCard input {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px 0; /* Espaçamento vertical entre os campos */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Bordas sutis */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    outline: none; /* Remove o contorno ao focar */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+/* Efeito ao focar no campo */
+.visualizarCard input:focus {
+    border-color: rgba(255, 255, 255, 0.8); /* Destaque na borda */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Sombra no foco */
+}
+
+/* Estilo do botão */
+.visualizarCard button {
+    width: 100%; /* Largura total */
+    padding: 12px 20px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    color: white; /* Cor do texto */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse no botão */
+.visualizarCard button:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo mais claro */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); /* Sombra mais evidente */
+}
+
+/* Efeito ao clicar no botão */
+.visualizarCard button:active {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo mais claro ao clicar */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Reduz a sombra */
+    transform: scale(0.98); /* Leve redução de tamanho */
+}
+
+.gestaoDetails{
+    color: white;
+}
+
+.btnConcluirObra{
+    margin-top: 15px;
+}
+
+.inputDataFim{
+    color: white;
+}
+
+#dataFimModal input, 
+#dataFimModal textarea {
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px 0; /* Espaçamento vertical entre os campos */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Bordas sutis */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    outline: none; /* Remove o contorno ao focar */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+/* Estilo ao focar no campo */
+#dataFimModal input:focus, 
+#dataFimModal textarea:focus {
+    border-color: rgba(255, 255, 255, 0.8); /* Destaque na borda */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Sombra no foco */
+}
+
+/* Estilo do botão */
+#dataFimModal button {
+    padding: 12px 20px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    color: white; /* Cor do texto */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse no botão */
+#dataFimModal button:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo mais claro */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); /* Sombra mais evidente */
+}
+
+/* Efeito ao clicar no botão */
+#dataFimModal button:active {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo mais claro ao clicar */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Reduz a sombra */
+    transform: scale(0.98); /* Leve redução de tamanho */
+}
+
+

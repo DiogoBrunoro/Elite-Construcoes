@@ -1,0 +1,215 @@
+/* Estilos de Fundo e Fonte */
+.login-fornecedor {
+    background-image: url('../imagens/Imagem3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Nunito", sans-serif;
+}
+
+.login-cliente {
+    background-image: url('../imagens/Imagem2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Seção de Login */
+#telaLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Estilo do título de Login */
+.h1Login {
+    color: #ffa600e7;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+}
+
+/* Caixa de Login */
+.caixaLogin {
+    padding: 60px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+/* Estilização do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 35px 40px;
+    border-radius: 40px;
+    width: 400px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Labels do Formulário */
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Campos de Entrada */
+form input[type="email"],
+form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #e6e6e6;
+    color: #333;
+}
+
+/* Estilo ao focar nos campos de entrada */
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #ffa600;
+    background-color: #f0f0f0;
+}
+
+/* Botão de Login */
+form button {
+    padding: 10px;
+    background-color: #ffa600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+form button:hover {
+    background-color: rgba(223, 145, 1, 0.938);
+}
+
+/* Links dentro do formulário */
+form a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #ffa600;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form a:hover {
+    color: #df9101;
+    text-decoration: underline;
+}
+
+/* Link visitado */
+form a:visited {
+    color: #ffa600;
+}
+
+/* Conteúdo Centralizado */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    min-width: 480px;
+    min-height: 480px;
+}
+
+/* Estilo dos títulos do formulário */
+h2.titulo-h2 {
+    color: #ffa600;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Reduzir a altura da seção de login */
+    #telaLogin {
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Ajuste na largura do formulário */
+    .container {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    /* Redimensionar a caixa de login */
+    .caixaLogin {
+        padding: 20px;
+    }
+
+    /* Ajuste no tamanho dos campos de entrada e botão */
+    form input[type="email"],
+    form input[type="password"],
+    form button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Centralizar e redimensionar o select */
+    select#tipo-login {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    /* Links dentro do formulário */
+    form a {
+        font-size: 1rem;
+    }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    /* Título de login */
+    .h1Login {
+        font-size: 1.8rem;
+    }
+
+    /* Ajustar o padding e o tamanho do formulário */
+    form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    /* Espaçamento e tamanhos de fontes menores */
+    form label,
+    form input[type="email"],
+    form input[type="password"],
+    form button,
+    form a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajuste geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+}
+
+#tipo-login{
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+    border: none; /* Sem borda */
+    margin-bottom: 10px;
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}

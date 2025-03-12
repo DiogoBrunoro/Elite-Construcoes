@@ -1,0 +1,153 @@
+/* Font settings */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.titulo-h2 {
+    color: #ffa600;
+    font-weight: 900;
+}
+
+/* Card styling */
+.card1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 40px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative;
+    z-index: 1;
+    width: 100%; /* Garante que o card ocupe toda a largura disponível no container */
+    max-width: 300px; /* Limita a largura máxima do card */
+    min-height: 350px; /* Define uma altura mínima para os cards */
+    margin: 10px auto; /* Centraliza os cards */
+    overflow: hidden; /* Impede que o conteúdo ultrapasse as bordas */
+}
+
+.card-title1{
+    color: rgb(255, 255, 255);
+}
+
+/* Card body */
+.card-body1 {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Garante que o card-body ocupe toda a altura do card */
+    border-radius: 400px;
+    color: white;
+}
+
+.btn-editar {
+    background-color: #ffa600;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-editar:hover {
+    background-color: #df9101;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-concluir {
+    background-color: #ffa600;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-concluir:hover {
+    background-color: #df9101;
+}
+
+.inicio {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    background-image: url('../imagens/trator.png'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Altura mínima ajustável */
+    object-fit: cover;
+    overflow-x: hidden; /* Apenas impede rolagem horizontal */
+}
+
+
+body.inicio {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centraliza os itens horizontalmente */
+    align-items: flex-start;  /* Alinha os itens ao topo */
+    width: 100%;  /* Faz o container ocupar 100% da largura da tela */
+    max-width: 100%;  /* Impede que o container ultrapasse 100% da largura da tela */
+    margin: 0 auto;  /* Centraliza o container */
+    padding: 0 15px;  /* Adiciona padding nas laterais para garantir espaçamento */
+}
+
+.row {
+    width: 100%;  /* Garante que a linha ocupe 100% da largura */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centraliza as colunas dentro da linha */
+}
+
+.ajustarCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: c;
+}

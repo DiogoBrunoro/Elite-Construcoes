@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Construções - Pagamento</title>
+    <link rel="stylesheet" href="../assets/css/pagamento.css">
+    <link href="../assets/css/header.css" rel="stylesheet">
+    <link rel="icon" href="../assets/imagens/Elite-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="pagamento-body">
+  <header>
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="../assets/imagens/Elite-removebg-preview.png" alt="" width="100px" height="150px">
+        <div class="Tituloh1">
+          <h1>ELITE CONSTRUÇÕES</h1>
+        </div>
+      </div>
+      <div class="divNav">
+        <nav>
+          <ul>
+            <li><a href="../pages/home.html">Home</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/dadosCliente.html">Perfil Usuário</a></li>
+            <li><a href="../pages/dadosFornecedor.html">Perfil Fornecedor</a></li>
+            <li><a href="../pages/visualizar.html">Cadastro de Serviço</a></li>
+            <li><a href="../pages/viewService.html">Adquirir serviços</a></li>
+            <li><a href="../pages/inicio.html">Ver minhas obras</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+    <div class="container">
+        <form id="pagamentoForm" novalidate>
+            <h2 class="titulo-h2">Informações de Pagamento</h2>
+
+            <label for="numeroCartao">Número do Cartão:</label>
+            <input type="text" id="numeroCartao" name="numeroCartao" maxlength="16" required>
+
+            <label for="nomeCartao">Nome no Cartão:</label>
+            <input type="text" id="nomeCartao" name="nomeCartao" required>
+
+            <label for="validadeCartao">Validade do Cartão (MM/AA):</label>
+            <input type="text" id="validadeCartao" name="validadeCartao" maxlength="5" placeholder="MM/AA" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" maxlength="3" required>
+
+            <!-- Botões de ação -->
+            <div style="display: flex; gap: 10px;">
+                <button type="button" onclick="concluirPagamento()">Concluir Pagamento</button>
+                <button type="button" onclick="window.location.href='home.html';">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../controller/pagamento.js"></script>
+    <script src="../controller/criarHeader.js"></script>
+</body>
+
+</html>

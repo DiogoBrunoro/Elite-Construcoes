@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Construções - Cadastro de Obra</title>
+    <link rel="stylesheet" href="../assets/css/cadastroObra.css">
+    <link href="../assets/css/header.css" rel="stylesheet">
+    <link rel="icon" href="../assets/imagens/Elite-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<header>
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="../assets/imagens/Elite-removebg-preview.png" alt="" width="100px" height="150px">
+        <div class="Tituloh1">
+          <h1>ELITE CONSTRUÇÕES</h1>
+        </div>
+      </div>
+      <div class="divNav">
+        <nav>
+          <ul>
+            <li><a href="../pages/home.html">Home</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/dadosCliente.html">Perfil Usuário</a></li>
+            <li><a href="../pages/dadosFornecedor.html">Perfil Fornecedor</a></li>
+            <li><a href="../pages/visualizar.html">Cadastro de Serviço</a></li>
+            <li><a href="../pages/viewService.html">Adquirir serviços</a></li>
+            <li><a href="../pages/inicio.html">Ver minhas obras</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+<body class="cadastro-body">
+    <div class="container">
+
+        <form id="cadastroObraForm" novalidate>
+            <label for="nomeServico">Nome do Serviço:</label>
+            <input type="text" id="nomeServico" name="nomeServico" required>
+
+            <label for="precoServico">Preço:</label>
+            <input type="number" id="precoServico" name="precoServico" step="0.01" required>
+
+            <label for="unidadeMedida">Unidade de Medida:</label>
+            <select id="unidadeMedida" name="unidadeMedida" required>
+                <option value="m">Metros (m)</option>
+                <option value="m2">Metros quadrados (m²)</option>
+                <option value="m3">Metros cúbicos (m³)</option>
+            </select>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+            <button type="button" onclick= "window.location.href='home.html';">Confirmar Cadastro</button>
+            
+        </form>
+    </div>
+
+    <!-- para deixar o header responsivo -->
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("nav-links");
+            nav.classList.toggle("active");
+        }
+    </script>
+    <script src="../controller/criarHeader.js"></script>
+
+</body>
+
+</html>

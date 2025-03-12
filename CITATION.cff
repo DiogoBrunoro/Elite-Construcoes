@@ -1,0 +1,39 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Elite Construções
+authors:
+  - family-names: Melgaço Soares
+    given-names: Bernardo
+  - family-names: Caribé Brunoro
+    given-names: Diogo
+  - family-names: Ferreira Ribeiro
+    given-names: Lucas
+  - family-names: Fonseca de Assis
+    given-names: Paulo Henrique
+  - family-names: Maia
+    given-names: Pedro Henrique
+  - family-names: Rodrigues Duarte
+    given-names: Pedro
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Alonso Veloso
+    given-names: Eveline 
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Baroni De Carvalho
+    given-names: Juliana Amaral 
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Norberta de Brito
+    given-names: Aline 
+    
+keywords: 
+    - Gestão de obras
+    - Construção civil
+    - Empreiteiras
+    - Software de gerenciamento
+    - Acompanhamento de obras 
+repository-code: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti2-3687100-elite-construcoes/tree/main
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-12-10

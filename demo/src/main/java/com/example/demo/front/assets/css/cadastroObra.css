@@ -1,0 +1,133 @@
+/* Estilo geral do corpo */
+.cadastro-body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    background-image: url('../imagens/retroEscavadeira.jpeg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilo do container */
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Altura total da tela */
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilização do formulário */
+form {
+    background-color: #fff; /* Fundo branco */
+    padding: 35px 40px;
+    border-radius: 40px; /* Arredondar os cantos */
+    width: 400px; /* Largura fixa do formulário */
+}
+
+/* Estilo dos títulos do formulário */
+h2.titulo-h2 {
+    color: #ffa600; /* Cor do título do formulário */
+    font-weight: 900;
+    text-align: center;
+}
+
+/* Estilizando os labels */
+form label {
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+    color: #000000; /* Cor dos labels */
+    display: block;
+}
+
+/* Estilizando os campos de input e textarea */
+form input[type="text"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%; /* Largura total do campo */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 30px; /* Arredondar os cantos */
+    font-size: 16px;
+    background-color: #e6e6e6; /* Fundo cinza-claro */
+    color: #333; /* Cor do texto */
+    margin-left: -10px;
+}
+
+/* Estilo para foco nos campos */
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus,
+form textarea:focus {
+    outline: none; /* Remove o contorno padrão */
+    border: 1px solid #ffa600; /* Borda em destaque */
+    background-color: #f0f0f0; /* Fundo mais claro */
+}
+
+/* Estilo para o botão de submit */
+form button[type="button"] {
+    padding: 10px;
+    background-color: #ffa600; /* Cor do botão */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 30px; /* Arredondar os cantos */
+    width: 100%; /* Largura total do botão */
+}
+
+/* Efeito ao passar o mouse no botão de submit */
+form button[type="submit"]:hover {
+    background-color: #df9101; /* Efeito de hover */
+}
+
+
+        /* Responsividade */
+@media (max-width: 768px) {
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        padding-top: 50px;
+    }
+
+    nav ul.active {
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    nav ul li a {
+        color: #ffa600;
+        font-size: 20px;
+    }
+
+    /* Responsividade no formulário */
+    form {
+        width: 90%;
+    }
+}

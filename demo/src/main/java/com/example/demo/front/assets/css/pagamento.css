@@ -1,0 +1,173 @@
+/* Estilo geral do corpo */
+.pagamento-body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    background-image: url('../imagens/retroEscavadeira.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilo do container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    color: #fff;
+}
+
+/* Estilização do formulário */
+form {
+    background-color: #fff;
+    padding: 35px 40px;
+    border-radius: 40px;
+    width: 400px;
+}
+
+/* Estilo dos títulos do formulário */
+h2.titulo-h2 {
+    color: #ffa600;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* Estilizando os labels */
+form label {
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+    color: #ffffff;
+    display: block;
+}
+
+/* Estilizando os campos de input */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #e6e6e6;
+    color: #333;
+    margin-left: -10px;
+}
+
+/* Estilo para foco nos campos */
+form input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #ffa600;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para o botão de confirmação */
+form button[type="button"] {
+    padding: 10px;
+    background-color: #ffa600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+    width: 100%;
+}
+
+/* Efeito ao passar o mouse no botão */
+form button[type="button"]:hover {
+    background-color: #df9101;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        padding-top: 50px;
+    }
+
+    nav ul.active {
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    nav ul li a {
+        color: #ffa600;
+        font-size: 20px;
+    }
+
+    /* Responsividade no formulário */
+    form {
+        width: 90%;
+    }
+}
+
+form button {
+    margin-top: 10px;
+}
+
+form button + button {
+    margin-left: 10px; /* Espaço entre os botões */
+}
+
+.pagamento-body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    background-image: url('../imagens/pedreiro.png'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Nunito", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilização do formulário */
+form {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo branco com transparência */
+    padding: 35px 40px;
+    border-radius: 40px; /* Arredondar os cantos */
+    width: 400px; /* Largura fixa do formulário */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
+}
+
+/* Estilo dos títulos do formulário */
+h2.titulo-h2 {
+    color: #ffa600; /* Cor do título do formulário */
+    font-weight: 900;
+    text-align: center;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Construções - Informações da Obra</title>
+    <link rel="stylesheet" href="../assets/css/preencherInfoObra.css">
+    <link href="../assets/css/header.css" rel="stylesheet">
+    <link rel="icon" href="../assets/imagens/Elite-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body class="preencherInfoObra-body">
+  <header>
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="../assets/imagens/Elite-removebg-preview.png" alt="" width="100px" height="150px">
+        <div class="Tituloh1">
+          <h1>ELITE CONSTRUÇÕES</h1>
+        </div>
+      </div>
+      <div class="divNav">
+        <nav>
+          <ul>
+            <li><a href="../pages/home.html">Home</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/dadosCliente.html">Perfil Usuário</a></li>
+            <li><a href="../pages/dadosFornecedor.html">Perfil Fornecedor</a></li>
+            <li><a href="../pages/visualizar.html">Cadastro de Serviço</a></li>
+            <li><a href="../pages/viewService.html">Adquirir serviços</a></li>
+            <li><a href="../pages/inicio.html">Ver minhas obras</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header> 
+
+    <div class="container">
+        <form id="preencherInfoObraForm" novalidate>
+            <h2 class="titulo-h2">Informações da Obra</h2>
+
+            <label for="dataInicio">Data de Início:</label>
+            <input type="date" id="dataInicio" name="dataInicio" required>
+
+            <div class="areaConstruida">
+            </div>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="observacaoCliente">Observação do Cliente:</label>
+            <textarea id="observacaoCliente" name="observacaoCliente" rows="4"></textarea>
+
+            <!-- Botões de ação -->
+            <div style="display: flex; gap: 10px; margin-top: 10px;">
+              <button type="button" id="btnAvancarPagamento">Avançar para Pagamento</button>
+               <!-- <button type="button" onclick="window.location.href='home.html'">Cancelar</button> -->
+            </div>
+        </form>
+    </div>
+
+    <script src="../controller/preencherInfoObra.js"></script>
+    <script src="../controller/criarHeader.js"></script>
+</body>
+
+</html>
